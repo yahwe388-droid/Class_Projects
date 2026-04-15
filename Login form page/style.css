@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    width: 100;
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.login-btn {
+    background-color: #007bff;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.clear-btn:hover {
+    background-color: #b02a37;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Registration Form Styles --- */
+
+.reg-container {
+    width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.reg-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group label, .group-title {
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.form-group input[type="text"], 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.form-group select {
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 90px;
+    font-family: inherit;
+}
+
+.check-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Override global label for checkboxes and radios */
+label.check-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin-top: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Prevent global input styles from breaking radios/checkboxes */
+.check-label input[type="radio"],
+.check-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.buttons-center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.buttons-center button {
+    margin: 0 5px;
+}
+
+.align-items-start {
+    align-items: start;
+}
